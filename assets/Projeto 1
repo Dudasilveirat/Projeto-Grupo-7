@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 1</title>
+</head>
+
+<!-- Estilos (remover quando o css estiver pronto) -->
+
+<style>
+    *{
+        color: white;
+    }
+    body{
+        background-color: #0D131C;
+    }
+</style>
+
+
+<body>
+    <!-- MENU -->
+    <div>
+        <ul>
+            <li><a href=""><img src="" alt="">Início</a>           
+            </li>
+
+            <div>
+                    <li><a href=""><img src="" alt="">Contato</a>           
+                    </li> 
+            </div>
+
+        </ul>
+    </div>
+
+    <!-- logo do grupo -->
+    <div>
+        <img src="./assets/images/logo.svg" alt="">
+ 
+    </div>
+
+
+    <!-- card com informações de um membro do grupo -->
+    <div>
+        <!-- foto do membro do grupo -->
+        <div><img src="file.png" alt="Foto de perfil de Nathalyn Nery">
+        </div>
+    
+        <div>
+            <h3>Nome obrenome</h3>
+            <p>Cargo:</p>
+            <p>Idade:</p>
+            <p>Cidade:</p>
+        </div>
+            
+        </div>
+
+         <!-- logo ao lado do texto ''sobre mim'' -->
+    <div>
+        <!-- foto do logo -->
+        <div><img src="./assets/images/user-avatar.png" alt="">
+        </div>
+
+        <div>
+            <h3>Sobre Mim</h3>
+                <p>Informações sobre você</p>
+
+        <div>
+
+<!-- logo ao lado do texto ''Experiência'' -->
+<div>
+    <!-- foto do logo -->
+    <div><img src="./assets/images/user-avatar.png" alt="">
+    </div>
+
+    <div>
+        <h3>Experiência</h3>
+            <li>Característica 1</li>
+                <li>Característica 1</li>
+                    <li>Característica 1</li>
+
+            <div>
+
+                <!-- logo ao lado do texto ''Habilidades'' -->
+    <div>
+        <!-- foto do logo -->
+        <div><img src="./assets/images/user-avatar.png" alt="">
+        </div>
+        <!-- nome, sobrenome e link para página interna -->
+        <div>
+            <h3>Habilidades</h3>
+                <li>Característica 1</li>
+                    <li>Característica 1</li>
+                        <li>Característica 1</li>
+            </div>
+
+            <div>
+<p>
+
+</p>
+                <a href="https://www.instagram.com/nathalyn_nery/">Redes Sociais</a>
+                     <a href="https://www.linkedin.com/in/nathalyn-nery/">Entrar em Contato</a>
+            </div>
+    
+    <footer>
+        <img src="./assets/images/logofiap.png" alt=""> 
+        <p>1TWDOA-2024</p>
+    </footer>
+</body>
+</html>
