@@ -1,25 +1,88 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
+:root {
+    --bg-color-blue-dark: #0D131C;
+    --bg-color-blue-medium: #161E29; 
+    --bg-color-blue-light: #1E2834; 
+    --border-radius: 16px;
+    --border: 1px solid #283242; 
+    --box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25); 
+    --font-color: #fff;
+    --font-size-32: 32px;
+    --font-size-24: 24px;
+    --font-size-16: 16px;
+    --font-style: normal;
+    --line-height: normal;
+}
+
 body{
-    background-color:#0D131C;
-    color: white;
-    @import url('satoshi.css');
+    background-color: var(--bg-color-blue-dark);
+}
+
+* {
+    font-family: 'Satoshi', sans-serif;
+    color: var(--font-color);
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+.menu img{
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    width: 250px;
+}
+
+.logo img{
+    display: flex;
+    justify-content: center;
+    margin: 60px auto;
+    width: 300px;
+    
+}
+
+.ícone_card img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    filter: grayscale(50);
+    margin: 30px;
+    
+
+}
+
+
+
+
+
 
     .botao {
-        border: #6060ff;
-        border-radius: 8px;
-        color: white;
-        background-color: #6060ff;
-        border-radius: 40px;
+    border: #6060ff;
+    border-radius: 8px;
+    color: white;
+    background-color: #6060ff;
+    border-radius: 40px;
     }
     
-    .fotos{
-        border-radius: 100px;
-        border-width: 5px; 
-        border-right: 8px;
-        background: linear-gradient(to right, #6060ff, #4be488);
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ícone_card{
+    border-radius: 100px;
+    border-width: 5px; 
+    border-right: 8px;
+    background: linear-gradient(to right, #6060ff, #4be488);
     }
 
-    .logo{
-       
-    }
-}
 
