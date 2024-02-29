@@ -1,62 +1,102 @@
 @import url('https://fonts.cdnfonts.com/css/satoshi');
 
+:root {
+    --bg-color-blue-dark: #0D131C;
+    --bg-color-blue-medium: #161E29; 
+    --bg-color-blue-light: #1E2834; 
+    --border-radius: 16px;
+    --border: 1px solid #283242; 
+    --box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25); 
+    --font-color: #fff;
+    --font-size-32: 32px;
+    --font-size-24: 24px;
+    --font-size-16: 16px;
+    --font-style: normal;
+    --line-height: normal;
+}
 
 body {
-    background-color: #0D131C;
-    display: block;
+    background-color: var(--bg-color-blue-dark);
 }
 
 
 * {
+    font-family: 'Satoshi', sans-serif;
+    color: var(--font-color);
+    letter-spacing: 1px;
     margin: 0;
     padding: 0;
-    font-family: 'Satoshi', sans-serif;
-    color: #fff;
-    box-sizing: border-box;
-    font-size: 16px;
-}
+    box-sizing: border-box;}
 
 
 .menu img {
     display: flex;
-    align-items: center;
+    justify-content: center;
     margin: 30px auto;
+    width: 250px;
 }
 
 
 .logo img {
     display: flex;
-    align-items: center;
-    margin: 100px auto
+    justify-content: center;
+    margin: 60px auto;
+    width: 300px;
 }
 
 
 .conteudo {
-    border-radius: 16px;
-    border: 1px solid #283242;
-    background: #161E29;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
-    width: 1000px;
-    margin: auto;
-    align-items: center;
-    padding: 10px 25px;
+    border-radius: var(--border-radius);
+    border: var(--border); 
+    background: var(--bg-color-blue-medium);
+    box-shadow: var(--box-shadow);
+    width: 800px;
+    margin: 50px auto;
+    padding: 30px 60px;
 }
 
+
+.perfil {
+    display: flex;
+    align-items: center;
+}
+
+
+.perfil img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    filter: grayscale(50);
+    margin: 30px;
+}
+
+.informação_perfil {
+    margin: 10px;
+}
+
+.informação_perfil h3 {
+    font-size: var(--font-size-32);
+    font-style: var(--font-style);
+    font-weight: 700;
+    line-height: var(--line-height);
+}
+
+.informação_perfil p {
+    font-size: var(--font-size-16);
+    font-style: var(--font-style);
+    font-weight: 700;
+    line-height: var(--line-height);
+}
 
 .card {
-    border-radius: 16px;
-    border: 1px solid #283242;
-    background: #1E2834;
-    box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.30);
+    border-radius: var(--border-radius);
+    border: var(--border);
+    background: var(--bg-color-blue-light);
+    box-shadow: var(--box-shadow);
     padding: 30px 40px;
-    margin-top: 30px;
-    display: flex;
+    margin: 30px;
+    display: flex; 
 }
-
-
-.icone_card {
-}
-
 
 .texto_card {
     margin-left: 20px;
@@ -70,6 +110,8 @@ body {
 
 .redes {
     display: flex;
+    justify-content: center;
+    gap: 16px;
 }
 
 
@@ -77,26 +119,27 @@ body {
     text-decoration: none;
 }
 
+.redes_sociais p {
+    float: center; 
+    float: right;
+    margin-left: 10px;
+}
+
+.contato p {
+    float: left; 
+    float: right;
+    margin-left: 10px;
+}
+
 
 footer {
-    border: 1px solid #283242;
-    background: #161E29;
+    border: var(--border);
+    background: var(--bg-color-blue-medium);
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
     width: 100%;
+    height: 100px;
     margin-top: 50px;
-    padding: 48px 70px;
-}
-
-
-.logo_fiap {
-    float: left;
-    margin: auto;
+    padding: 30px 70px;
     display: flex;
-}
-
-
-.turma {
-    display: flex;
-    float: right;
-    margin: 0;
-}
+    justify-content: space-between;
+    }
