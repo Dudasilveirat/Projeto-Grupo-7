@@ -8,15 +8,12 @@
     --border: 1px solid #283242;
     --box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
     --font-color: #fff;
-    --font-size-32: 32px;
-    --font-size-24: 24px;
-    --font-size-16: 16px;
     --font-style: normal;
     --line-height: normal;
 }
 
-body {
-    background-color: var(--bg-color-blue-dark);
+html {
+    font-size: 62.5%; /* 10px */
 }
 
 * {
@@ -27,18 +24,25 @@ body {
     box-sizing: border-box;
 }
 
-.menu img {
-    display: flex;
-    justify-content: center;
-    margin: 30px auto;
-    width: 15%;
+body {
+    background-color: var(--bg-color-blue-dark);
 }
 
-.logo img {
-    display: flex;
-    justify-content: center;
-    margin: 60px auto;
+.menu {
+    display: flex; /* Define como um conteiner flexível */
+    flex-direction: column; /* alinha verticalmente um abaixo do outro*/
+    justify-content: center; /* Centraliza os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+#inicio {
+    width: 16%;
+    margin: 30px auto;
+}
+
+#logo {
     width: 20%;
+    margin: 30px auto;
 }
 
 .conteudo {
@@ -46,39 +50,33 @@ body {
     border: var(--border);
     background: var(--bg-color-blue-medium);
     box-shadow: var(--box-shadow);
-    width: 70%;
+    width: 70%; 
     margin: 50px auto;
     padding: 30px 60px;
 }
 
 .perfil {
-    display: flex;
+    display: flex; /* por padrão, foi add um "flex-direction: row" que alinha os itens um ao lado do outro */
     align-items: center;
-    margin: 30px;
+    gap: 40px;
+    margin: 30px 30px 60px 30px;
+    padding: 10px;
 }
 
 .perfil img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    filter: grayscale(50);
-    margin: 30px;
+    width: 24%;
+    margin-left: 10%;
 }
 
-.informação_perfil {
-    margin-left: 10px;
-}
-
-.informação_perfil h3 {
-    font-size: var(--font-size-32);
+.informaçao_perfil h3 {
+    font-size: 3.2rem; /* 32px */
     font-style: var(--font-style);
     font-weight: 900;
     line-height: var(--line-height);
 }
 
-
-.informação_perfil p {
-    font-size: var(--font-size-16);
+.informaçao_perfil p {
+    font-size: 1.6rem; /* 16px */
     font-style: var(--font-style);
     font-weight: 700;
     line-height: var(--line-height);
@@ -88,7 +86,7 @@ body {
 #cargo {
     color: #B0B0B0;
     font-weight: 500;
-    padding: 12px 0;
+    padding: 10px 0;
 }
 
 .card {
@@ -96,19 +94,18 @@ body {
     border-radius: var(--border-radius);
     border: var(--border);
     box-shadow: var(--box-shadow);
-    padding: 30px 40px;
-    margin: 30px;
     display: flex;
+    width: 90%;
+    padding: 30px 40px;
+    margin: 30px auto;
 }
-
-.icone_card {}
 
 .texto_card {
     padding-left: 20px;
 }
 
 .texto_card h3 {
-    font-size: var(--font-size-24);
+    font-size: 2.4rem; /* 24px */
     font-style: var(--font-style);
     font-weight: 900;
     line-height: var(--line-height);
@@ -116,7 +113,14 @@ body {
 
 .texto_card p {
     padding-top: 16px;
-    font-size: var(--font-size-16);
+    font-size: 1.6rem; /* 16px */
+    font-style: var(--font-style);
+    font-weight: 400;
+    line-height: var(--line-height);
+}
+
+.texto_card ul li {
+    font-size: 1.6rem; /* 16px */
     font-style: var(--font-style);
     font-weight: 400;
     line-height: var(--line-height);
@@ -125,28 +129,30 @@ body {
 .botoes {
     display: flex;
     justify-content: center;
-    gap: 16px;
-}
-
-.botoes div {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
-    width: 180px;
-    height: 44px;
-    border: 1px solid #6060FF;
-    background-color: #6060FF;
-    padding: 10px 14px;
-    border-radius: 8px;
+    gap: 16px; /* espaço entre os botões*/
+    margin: 60px 30px 30px 30px;
+    padding: 10px;
 }
 
 .botoes a {
     text-decoration: none;
 }
 
-.botoes p {
-    font-size: 10px;
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* espaço no conteudo do botão*/
+    width: 100%;
+    background-color: #6060FF;
+    border: 1px solid #6060FF;
+    border-radius: 8px;
+    padding: 10px 14px;
+}
+
+.botao p {
+    font-size: 1rem; /* 10px */
     font-style: var(--font-style);
     font-weight: 700;
     line-height: var(--line-height);
@@ -158,9 +164,13 @@ footer {
     background: var(--bg-color-blue-medium);
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
     width: 100%;
-    height: 100px;
     margin-top: 50px;
     padding: 30px 70px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1.6rem;
 }
