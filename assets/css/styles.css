@@ -1,88 +1,131 @@
 @import url('https://fonts.cdnfonts.com/css/satoshi');
 
+
 :root {
     --bg-color-blue-dark: #0D131C;
-    --bg-color-blue-medium: #161E29; 
-    --bg-color-blue-light: #1E2834; 
+    --bg-color-blue-medium: #161E29;
+    --bg-color-blue-light: #1E2834;
     --border-radius: 16px;
-    --border: 1px solid #283242; 
-    --box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25); 
+    --border: 1px solid #283242;
+    --box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
     --font-color: #fff;
-    --font-size-32: 32px;
-    --font-size-24: 24px;
-    --font-size-16: 16px;
     --font-style: normal;
     --line-height: normal;
 }
 
-body{
-    background-color: var(--bg-color-blue-dark);
+html {
+    font-size: 62.5%;
 }
 
 * {
     font-family: 'Satoshi', sans-serif;
     color: var(--font-color);
-    letter-spacing: 1px;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 
-.menu img{
+body {
+    background-color: var(--bg-color-blue-dark);
+}
+
+.menu {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+#inicio {
+    width: 16%;
     margin: 30px auto;
-    width: 250px;
 }
 
-.logo img{
+#logo {
+    width: 20%;
+    margin: 30px auto;
+}
+
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.card {
+    border-radius: var(--border-radius);
+    border: var(--border);
+    background: var(--bg-color-blue-light);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    gap: 24px;
+    width: 35%;
+    margin: 10px;
+    padding: 20px;
+}
+
+.card img {
+    width: 20%;
+    height: 20%;
+}
+
+.texto_card {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto_card h3 {
+    font-size: 2.4rem;
+    font-style: var(--font-style);
+    font-weight: 700;
+    line-height: var(--line-height);
+}
+
+.texto_card p {
+    font-size: 1.6rem;
+    font-style: var(--font-style);
+    font-weight: 500;
+    line-height: var(--line-height);
+    color: #B0B0B0;
+    padding: 8px 0 16px 0;
+}
+
+.botao {
     display: flex;
     justify-content: center;
-    margin: 60px auto;
-    width: 300px;
-    
-}
-
-.foto_card img{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    filter: grayscale(50);
-    margin: 30px;
-    
-
-}
-
-
-
-
-
-
-    .botao {
-    border: #6060ff;
+    width: 100px;
+    background-color: #6060FF;
+    border: 1px solid #6060FF;
     border-radius: 8px;
-    color: white;
-    background-color: #6060ff;
-    border-radius: 40px;
-    }
-    
+    padding: 10px 14px;
+}
 
+.botao a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-style: var(--font-style);
+    font-weight: 700;
+    line-height: var(--line-height);
+}
 
+footer {
+    border: var(--border);
+    background: var(--bg-color-blue-medium);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    margin-top: 50px;
+    padding: 30px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-.ícone_card{
-    border-radius: 100px;
-    border-width: 5px; 
-    border-right: 8px;
-    background: linear-gradient(to right, #6060ff, #4be488);
-    }
-
-
+footer p {
+    font-size: 1.6rem;
+}
